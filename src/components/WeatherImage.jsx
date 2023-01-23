@@ -1,7 +1,6 @@
-const WeatherImage = () => {
+const WeatherImage = ({data}) => {
     return (
-        <img width="256" height="256" src="../src/assets/sun.webp" alt="WeatherImage" />
+        <img height="128" width="128" src={`http://openweathermap.org/img/wn/${data.weather?.[0].icon}@4x.png`} alt="Weather Image" />
     )
 }
-
 export default WeatherImage

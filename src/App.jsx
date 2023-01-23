@@ -4,20 +4,21 @@ import SearchBar from "./components/SearchBar"
 import "./styles/index.css"
 import { useEffect, useState } from "react"
 
-const WEATHER_API = "http://api.weatherapi.com/v1/current.json?key=8afc0e8503da447387c193327232201&q=Warsaw"
-
 function App() {
   const [city, setCity] = useState("Warsaw");
+  const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=8afc0e8503da447387c193327232201&q=${city}`)
-    .then(response => response.json())
-    .then(data => console.log(data))
-  }, [city]);
+    (async () => {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=pl&appid=25d335a5db7cce5fb02b08dfc6049a33`);
+        const result = await response.json();
+        await setData(result);
+    })();
+},[city])
   return (
     <div className="h-screen flex flex-col justify-center items-center">
       <SearchBar setCity={setCity} />
-      <Container />
+      <Container data={data} />
       <Footer />
     </div>
   )
