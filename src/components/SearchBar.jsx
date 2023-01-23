@@ -5,6 +5,7 @@ const SearchBar = ({setCity}) => {
     const handlePressEnter = (event) => {
         if (event.key === 'Enter'){
             setCity(searchRef.current.value);
+            searchRef.current.value = ""
         }
     }
     return (
