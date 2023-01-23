@@ -18,7 +18,9 @@ function App() {
   return (
     <div className="h-screen flex flex-col justify-center items-center">
       <SearchBar setCity={setCity} />
-      <Container data={data} />
+      {data.name !== undefined && 
+        <Container data={data} />
+      }
       <Footer />
     </div>
   )
