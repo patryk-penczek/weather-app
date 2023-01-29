@@ -1,9 +1,16 @@
 import Content from "./Content"
+import WeatherLocation from "./WeatherLocation"
+import WeatherDate from "./WeatherDate"
+import WeatherTemperature from "./WeatherTemperature"
+import WeatherInfo from "./WeatherInfo"
 
 const Container = ({data}) => {
     return (
-        <div className="flex text-center justify-center items-center flex-col bg-gradient-to-r from-sky-600 via-sky-500 to-sky-600 bg-blue-500 shadow-lg shadow-blue-500/50 px-24 py-8 rounded-xl gap-x-8">
-            <Content data={data} />
+        <div className="flex text-center justify-center items-center flex-col bg-[url('/src/assets/background.webp')] bg-center bg-cover rounded-xl">
+            <WeatherLocation data={data} />
+            <WeatherDate data={data} />
+            <WeatherInfo data={data} />
+            <WeatherTemperature data={data} />
         </div>
     )
 }
