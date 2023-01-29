@@ -1,7 +1,7 @@
 const WeatherTemperature = ({data}) => {
     return (
         <>
-            <p className="text-xl">{data.main.temp + "℃"}</p>
+            <div className="text-6xl">{data.main.temp + "℃"}</div>
         </>
     )
 }

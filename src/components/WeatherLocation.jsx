@@ -1,7 +1,7 @@
 const WeatherLocation = ({data}) => {
     return (
         <>
-            <h1 className="text-3xl font-semibold">{data.name}</h1>
+            <h1 className="text-3xl">{data.name}</h1>
         </>
     )
 }

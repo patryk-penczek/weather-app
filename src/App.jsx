@@ -1,6 +1,6 @@
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
+// import SearchBar from "./components/SearchBar"
 import Container from "./components/Container"
-import SearchBar from "./components/SearchBar"
 import "./styles/index.css"
 import { useEffect, useState } from "react"
 

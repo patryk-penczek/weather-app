@@ -1,7 +1,7 @@
 const WeatherDate = ({data}) => {
     return (
         <>
-            <h1 className="font-semibold text-xl">Sunday, Jan 29th {data.dt}</h1>
+            <h1 className="text-lg">Sunday, Jan 29th {data.dt}</h1>
         </>
     )
 }
