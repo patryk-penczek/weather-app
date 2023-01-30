@@ -15,13 +15,14 @@ function App() {
         await setData(result);
     })();
 },[city])
+console.log(data);
   return (
-    <div className="flex flex-col w-screen h-screen justify-center items-center text-white">
-      {/* <SearchBar setCity={setCity} /> */}
-      {data.name !== undefined && 
-        <Container data={data} />
-      }
-      {/* <Footer /> */}
+    <div className="flex relative flex-col w-screen h-screen justify-center items-center bg-neutral-900 text-white">
+        {/* <SearchBar setCity={setCity} /> */}
+        {data.name !== undefined && 
+          <Container data={data} />
+        }
+        {/* <Footer /> */}
     </div>
   )
 }
