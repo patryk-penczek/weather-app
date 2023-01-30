@@ -5,7 +5,7 @@ import WeatherTemperature from "./WeatherTemperature"
 
 const Container = ({data}) => {
     return (
-        <div className="flex p-16 relative w-screen h-screen max-w-xl max-h-xl flex-col bg-[url('/src/assets/background.webp')] bg-center bg-cover text-center">
+        <div className="flex p-12 relative w-screen h-screen max-w-[360px] max-h-[640px] flex-col bg-gradient-to-r from-blue-500 to-blue-600 text-center">
             <WeatherLocation data={data} />
             <WeatherDate data={data} />
             <div className="flex flex-row flex-wrap-reverse items-center place-content-between my-8">

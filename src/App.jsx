@@ -16,7 +16,7 @@ function App() {
     })();
 },[city])
   return (
-    <div className="flex flex-col w-screen h-screen justify-center items-center font-">
+    <div className="flex flex-col w-screen h-screen justify-center items-center text-white">
       {/* <SearchBar setCity={setCity} /> */}
       {data.name !== undefined && 
         <Container data={data} />
