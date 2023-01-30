@@ -1,7 +1,9 @@
 const WeatherDate = ({data}) => {
+    let epochDate = data.dt;
+    let humanDate = new Date(epochDate * 1000);
     return (
         <>
-            <h1 className="text-lg">Sunday, Jan 29th {data.dt}</h1>
+            <h1 className="text-lg">{humanDate.toLocaleDateString()}</h1>
         </>
     )
 }
