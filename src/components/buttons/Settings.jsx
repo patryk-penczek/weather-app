@@ -4,7 +4,7 @@ const Settings = () => {
     return (
         <>
             <button>
-                <SettingsIcon className="absolute right-8" />
+                <SettingsIcon className="dark:text-white text-black absolute right-8" />
             </button>
         </>
     )

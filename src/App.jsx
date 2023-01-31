@@ -7,6 +7,7 @@ function App() {
   const [city, setCity] = useState("Warsaw");
   const [language , setLanguage] = useState("en");
   const [data, setData] = useState({});
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     (async () => {
@@ -16,10 +17,24 @@ function App() {
     })();
 },[city, language])
 console.log(data);
+
+if (theme === 'dark' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+
   return (
-    <div className="flex relative flex-col w-full h-full sm:h-screen justify-center items-center bg-neutral-900 text-white">
+    <div className="flex relative flex-col w-full h-full sm:h-screen justify-center items-center dark:bg-neutral-900 bg-neutral-200 dark:text-white text-black">
         {data.name !== undefined && 
-          <Container data={data} setCity={setCity} language={language} setLanguage={setLanguage} />
+          <Container
+            data={data}
+            setCity={setCity}
+            language={language}
+            setLanguage={setLanguage}
+            theme={theme}
+            setTheme={setTheme} 
+          />
         }
         <Footer />
     </div>

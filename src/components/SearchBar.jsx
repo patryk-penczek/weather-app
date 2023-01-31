@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const SearchBar = ({setCity}) => {
+const SearchBar = ({setCity, language}) => {
     const searchRef = useRef();
     const handlePressEnter = (event) => {
         if (event.key === 'Enter'){
@@ -14,11 +14,11 @@ const SearchBar = ({setCity}) => {
             <input 
                 type="text" 
                 id="search-bar" 
-                placeholder="Enter a city..."
+                placeholder={language === "en" ? "Enter a city..." : "Podaj miasto..."}
                 autoComplete="off"
                 onKeyDown={handlePressEnter} 
                 ref={searchRef} 
-                className="mb-10 w-60 bg-transparent border-[1px] rounded-lg p-1"
+                className="mb-10 w-60 bg-transparent border-[1px] rounded-lg p-1 dark:border-white border-black"
             />
         </>
     )
