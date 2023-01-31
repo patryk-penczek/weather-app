@@ -1,4 +1,4 @@
-import { SettingsIcon } from "../assets/icons/index"
+import { SettingsIcon } from "../../assets/icons/index"
 
 const Settings = () => {
     return (

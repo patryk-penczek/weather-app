@@ -4,32 +4,38 @@ const weatherCardData = ({data}) => {
     return [
     {
         icon: <TemperatureMinIcon />,
-        title: "Min",
+        titleEN: "Min",
+        titlePL: "Min",
         description: data.main.temp_min + "℃"
     },
     {
         icon: <TemperatureMaxIcon />,
-        title: "Max",
+        titleEN: "Max",
+        titlePL: "Max",
         description: data.main.temp_max + "℃"
     },
     {
         icon: <TemperatureFeelsLikeIcon />,
-        title: "Feels like",
+        titleEN: "Feels like",
+        titlePL: "Odczuwalna",
         description: data.main.temp_max + "℃"
     },
     {
         icon: <HumidityIcon />,
-        title: "Humidity",
+        titleEN: "Humidity",
+        titlePL: "Wilgotność",
         description: data.main.humidity + "%"
     },
     {
         icon: <PressureIcon />,
-        title: "Pressure",
+        titleEN: "Pressure",
+        titlePL: "Ciśnienie",
         description: data.main.pressure + " hPa"
     },
     {
         icon: <WindIcon />,
-        title: "Wind",
+        titleEN: "Wind",
+        titlePL: "Wiatr",
         description: data.wind.speed + " km/h"
     }, 
 ]}

@@ -5,20 +5,21 @@ import { useEffect, useState } from "react"
 
 function App() {
   const [city, setCity] = useState("Warsaw");
+  const [language , setLanguage] = useState("en");
   const [data, setData] = useState({});
 
   useEffect(() => {
     (async () => {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=en&appid=25d335a5db7cce5fb02b08dfc6049a33`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=${language}&appid=25d335a5db7cce5fb02b08dfc6049a33`);
         const result = await response.json();
         await setData(result);
     })();
-},[city])
+},[city, language])
 console.log(data);
   return (
     <div className="flex relative flex-col w-full h-full sm:h-screen justify-center items-center bg-neutral-900 text-white">
         {data.name !== undefined && 
-          <Container data={data} setCity={setCity} />
+          <Container data={data} setCity={setCity} language={language} setLanguage={setLanguage} />
         }
         <Footer />
     </div>

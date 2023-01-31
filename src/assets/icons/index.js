@@ -8,3 +8,5 @@ export { ReactComponent as WindIcon } from "./wind.svg";
 export { ReactComponent as SettingsIcon } from "./settings.svg";
 export { ReactComponent as SunIcon } from "./sun.svg";
 export { ReactComponent as MoonIcon } from "./moon.svg";
+export { ReactComponent as PolandIcon } from "./poland.svg"
+export { ReactComponent as UnitedStatesIcon } from "./united-states.svg"
