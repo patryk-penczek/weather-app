@@ -17,12 +17,10 @@ function App() {
 },[city])
 console.log(data);
   return (
-    <div className="flex relative flex-col w-screen h-screen justify-center items-center bg-neutral-900 text-white">
-        {/* <SearchBar setCity={setCity} /> */}
+    <div className="flex relative flex-col w-full h-screen justify-center items-center bg-neutral-900 text-white">
         {data.name !== undefined && 
-          <Container data={data} />
+          <Container data={data} setCity={setCity} />
         }
-        {/* <Footer /> */}
     </div>
   )
 }

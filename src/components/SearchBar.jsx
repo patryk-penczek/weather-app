@@ -11,7 +11,14 @@ const SearchBar = ({setCity}) => {
     return (
         <>
             <label className="sr-only" htmlFor="search-bar">Enter a city...</label>
-            <input onKeyDown={handlePressEnter} className="border-2 border-slate-900 p-1 rounded-xl mb-4" ref={searchRef} id="search-bar" type="text" placeholder="Enter a city..." />
+            <input 
+                onKeyDown={handlePressEnter} 
+                ref={searchRef} 
+                id="search-bar" 
+                type="text" 
+                placeholder="Enter a city..."
+                className="mb-10 w-60 bg-transparent border-[1px] rounded-lg p-1"
+            />
         </>
     )
 }

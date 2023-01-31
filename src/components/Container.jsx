@@ -1,13 +1,16 @@
+import SearchBar from "./SearchBar"
 import WeatherLocation from "./WeatherLocation"
 import WeatherDate from "./WeatherDate"
+import WeatherImage from "./WeatherImage"
 import WeatherInfo from "./WeatherInfo"
 
-const Container = ({data}) => {
+const Container = ({data, setCity}) => {
     return (
-        <div className="flex p-12 relative w-1/2 h-1/2 flex-col rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-center">
+        <div className="flex items-center relative flex-col text-center">
+            <SearchBar setCity={setCity} />
             <WeatherLocation data={data} />
             <WeatherDate data={data} />
-            <img className="rounded-xl place-self-center" height="128" width="128" src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`} alt="Weather Image" />
+            <WeatherImage data={data} />
             <WeatherInfo data={data} />
         </div>
     )
