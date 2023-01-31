@@ -1,34 +1,34 @@
-import { TemperatureMin, TemperatureMax, TemperatureFeelsLike, Humidity, Pressure, Wind } from "../../assets/icons";
+import { TemperatureMinIcon, TemperatureMaxIcon, TemperatureFeelsLikeIcon, HumidityIcon, PressureIcon, WindIcon } from "../../assets/icons";
 
 const weatherCardData = ({data}) => {
     return [
     {
-        icon: <TemperatureMin />,
+        icon: <TemperatureMinIcon />,
         title: "Min",
         description: data.main.temp_min + "℃"
     },
     {
-        icon: <TemperatureMax />,
+        icon: <TemperatureMaxIcon />,
         title: "Max",
         description: data.main.temp_max + "℃"
     },
     {
-        icon: <TemperatureFeelsLike />,
+        icon: <TemperatureFeelsLikeIcon />,
         title: "Feels like",
         description: data.main.temp_max + "℃"
     },
     {
-        icon: <Humidity />,
+        icon: <HumidityIcon />,
         title: "Humidity",
         description: data.main.humidity + "%"
     },
     {
-        icon: <Pressure />,
+        icon: <PressureIcon />,
         title: "Pressure",
         description: data.main.pressure + " hPa"
     },
     {
-        icon: <Wind />,
+        icon: <WindIcon />,
         title: "Wind",
         description: data.wind.speed + " km/h"
     }, 

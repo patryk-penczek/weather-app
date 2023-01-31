@@ -1,4 +1,3 @@
-import React from "react"
 import weatherCardData from "../utils/data/weatherCardData"
 
 const WeatherInfo = ({data}) => {
