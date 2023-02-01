@@ -1,10 +1,11 @@
 import { SettingsIcon } from "../../assets/icons/index"
+import settingsAnimation from "../../utils/data/scripts/settingsAnimation"
 
-const Settings = () => {
+const Settings = ({open, setOpen}) => {
     return (
         <>
-            <button>
-                <SettingsIcon className="dark:text-white text-black absolute right-8" />
+            <button onClick={() => settingsAnimation(open, setOpen)}>
+                <SettingsIcon className="settings dark:text-white text-black absolute right-8" />
             </button>
         </>
     )
