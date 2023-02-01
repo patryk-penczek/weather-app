@@ -17,7 +17,7 @@ const settingsAnimation = (open, setOpen) => {
       switcher.classList.add("sr-only");
       switcher.classList.remove("animate-slide-in-right");
       settings.classList.remove("animate-settings-rotate-left");
-    }, 300);
+    }, 280);
     switcher.classList.add("animate-slide-in-right");
     settings.classList.add("animate-settings-rotate-left");
   }
