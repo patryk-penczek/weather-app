@@ -5,13 +5,13 @@ const LanguageSwitcher = ({language, setLanguage}) => {
         <>
             {language === "pl" &&
                 <button onClick={() => setLanguage("en")}>
-                    <UnitedStatesIcon />
+                    <PolandIcon />
                 </button>
             }
 
             {language === "en" &&
                 <button onClick={() => setLanguage("pl")}>
-                    <PolandIcon />
+                    <UnitedStatesIcon />
                 </button>
             }
         </>

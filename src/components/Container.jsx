@@ -17,7 +17,7 @@ const Container = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="relative flex flex-col items-center rounded-3xl border-black p-8 text-center dark:border-white sm:border-[1px] shadow-lg dark:shadow-white/20 shadow-black/40">
+    <div className="relative flex flex-col md:w-auto sm:h-auto w-full h-full items-center md:rounded-3xl md:border-black p-8 text-center md:dark:border-white md:border-[1px] md:shadow-lg md:dark:shadow-white/20 md:shadow-black/40">
       <Settings open={open} setOpen={setOpen} />
       <SearchBar setCity={setCity} language={language} />
       <WeatherLocation data={data} />

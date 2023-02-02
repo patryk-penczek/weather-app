@@ -5,7 +5,7 @@ const Settings = ({open, setOpen}) => {
     return (
         <>
             <button onClick={() => settingsAnimation(open, setOpen)}>
-                <SettingsIcon className="settings dark:text-white text-black absolute right-8" />
+                <SettingsIcon className="settings dark:text-white text-black absolute top-4 right-4 sm:top-auto sm:right-8" />
             </button>
         </>
     )
