@@ -1,5 +1,5 @@
-import Footer from "./components/Footer"
 import Container from "./components/Container"
+import Footer from "./components/Footer"
 import "./styles/index.css"
 import { useEffect, useState } from "react"
 
