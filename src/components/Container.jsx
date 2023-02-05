@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 import Header from "./Header";
 import WeatherLocation from "./WeatherLocation";
 import WeatherDate from "./WeatherDate";
@@ -15,8 +15,16 @@ const Container = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="relative flex flex-col md:w-auto sm:h-auto w-full h-full items-center md:rounded-3xl md:border-black p-8 text-center md:dark:border-white md:border-[1px] md:shadow-lg md:dark:shadow-white/20 md:shadow-black/40">
-      <Header setCity={setCity} language={language} setLanguage={setLanguage} theme={theme} setTheme={setTheme} open={open} setOpen={setOpen} />
+    <div className="relative flex h-full w-full flex-col items-center p-8 text-center sm:h-auto md:w-auto md:rounded-3xl md:border-[1px] md:border-black md:shadow-lg md:shadow-black/40 md:dark:border-white md:dark:shadow-white/20">
+      <Header
+        setCity={setCity}
+        language={language}
+        setLanguage={setLanguage}
+        theme={theme}
+        setTheme={setTheme}
+        open={open}
+        setOpen={setOpen}
+      />
       <WeatherLocation data={data} />
       <WeatherDate data={data} />
       <WeatherImage data={data} />

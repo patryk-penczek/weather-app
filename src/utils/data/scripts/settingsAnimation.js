@@ -19,6 +19,7 @@ const settingsAnimation = (open, setOpen) => {
       settings.classList.remove("animate-settings-rotate-left");
     }, 280);
     switcher.classList.add("animate-slide-in-right");
+
     settings.classList.add("animate-settings-rotate-left");
   }
 };
