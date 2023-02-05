@@ -18,7 +18,6 @@ function App() {
       await setData(result);
     })();
   }, [city, language]);
-  console.log(data);
 
   if (
     theme === "dark" &&
