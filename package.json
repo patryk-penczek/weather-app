@@ -1,7 +1,13 @@
 {
   "name": "weather-react",
+  "author": "Patryk Penczek",
   "private": true,
-  "version": "0.0.0",
+  "license": "ISC",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Desparek/Weather-React"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
