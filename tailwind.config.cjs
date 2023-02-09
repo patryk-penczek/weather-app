@@ -3,6 +3,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        light: "#F2F2F2",
+        dark: "#222222",
+      },
       dropShadow: {
         imageShadow: "0 0 10px rgba(0, 0, 0, 0.4)",
       },

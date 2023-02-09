@@ -20,7 +20,7 @@ const SearchBar = ({ setCity, language }) => {
         autoComplete="off"
         onKeyDown={handlePressEnter}
         ref={searchRef}
-        className="mb-10 mt-10 w-60 rounded-lg border-[1px] border-black bg-transparent p-1 dark:border-white sm:mt-auto"
+        className="mb-10 mt-10 w-60 rounded-lg border-[1px] border-dark bg-transparent p-1 dark:border-light sm:mt-auto"
       />
     </>
   );
