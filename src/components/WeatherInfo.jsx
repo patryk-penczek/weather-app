@@ -1,10 +1,10 @@
 import weatherCardData from "../utils/data/weatherCardData";
 
 const WeatherInfo = ({ data, language }) => {
-  const WeatherCardData = weatherCardData({ data });
+  const weatherDataCard = weatherCardData({ data });
   return (
     <div className="my-8 grid grid-cols-1 gap-y-4 text-light sm:grid-cols-2 sm:gap-x-4 md:grid-cols-3">
-      {WeatherCardData.map(({ icon, titleEN, titlePL, description }, index) => {
+      {weatherDataCard.map(({ icon, titleEN, titlePL, description }, index) => {
         return (
           <div
             key={index}
