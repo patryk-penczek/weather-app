@@ -8,13 +8,13 @@ const WeatherInfo = ({ data, language }) => {
         return (
           <div
             key={index}
-            className="flex w-64 flex-col items-center justify-center rounded-lg bg-black/60 px-8 py-4 dark:bg-black/40 sm:w-48"
+            className="flex w-full min-w-45 flex-col items-center justify-center rounded-lg border-1 border-primaryDark bg-light p-2 text-dark drop-shadow-md dark:border-primaryLight dark:bg-dark dark:text-white"
           >
-            <div className="flex items-center gap-x-1 text-xl">
+            <div className="flex items-center gap-x-1">
               {icon}
               {language === "en" ? titleEN : titlePL}
             </div>
-            {description}
+            <p className="text-lg">{description}</p>
           </div>
         );
       })}
