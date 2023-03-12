@@ -5,10 +5,17 @@ module.exports = {
     extend: {
       colors: {
         light: "#F2F2F2",
-        dark: "#222222",
+        dark: "#222",
+        primaryLight: "#D294FF",
+        primaryDark: "#7700CC",
+        secondary: "#3b3b3b",
       },
-      dropShadow: {
-        imageShadow: "0 0 10px rgba(0, 0, 0, 0.4)",
+      borderWidth: {
+        1: "1px",
+      },
+      minWidth: {
+        45: "180px",
+        175: "700px",
       },
       animation: {
         "slide-in-left": "slide-in-left 0.3s",

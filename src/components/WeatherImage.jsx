@@ -2,7 +2,7 @@ const WeatherImage = ({ data }) => {
   return (
     <>
       <img
-        className="place-self-center rounded-xl drop-shadow-imageShadow dark:drop-shadow-none"
+        className="place-self-center rounded-xl"
         height="128"
         width="128"
         src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`}
