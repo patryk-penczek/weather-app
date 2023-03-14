@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 import "./styles/index.css";
-import { useEffect, useState } from "react";
 
 function App() {
   const [city, setCity] = useState("Warsaw");
@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center bg-light text-dark dark:bg-dark dark:text-light sm:h-screen">
+    <div className="relative flex h-dvh w-full flex-col items-center justify-center bg-light text-dark dark:bg-dark dark:text-light sm:h-screen">
       {data.name !== undefined && (
         <Container
           data={data}
