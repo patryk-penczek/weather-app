@@ -20,7 +20,7 @@ const SearchBar = ({ setCity, language }) => {
         autoComplete="off"
         onKeyDown={handlePressEnter}
         ref={searchRef}
-        className="my-10 w-60 rounded-lg border-1 border-primaryDark bg-transparent px-3 py-2 focus:outline focus:outline-1 focus:outline-primaryDark dark:border-primaryLight focus:dark:outline-primaryLight sm:mt-auto"
+        className="my-12 w-60 rounded-lg border-1 border-primaryDark bg-transparent px-3 py-2 focus:outline focus:outline-1 focus:outline-primaryDark dark:border-primaryLight focus:dark:outline-primaryLight sm:mt-auto"
       />
     </>
   );

@@ -14,7 +14,7 @@ const Settings = ({
     <>
       <button onClick={() => settingsAnimation(open, setOpen)}>
         <span className="sr-only">Settings menu button</span>
-        <SettingsIcon className="settings absolute top-4 right-4 text-dark dark:text-light sm:top-auto sm:right-8" />
+        <SettingsIcon className="settings absolute top-5 right-4 text-dark dark:text-light sm:right-8" />
       </button>
       <SettingsPopup
         language={language}

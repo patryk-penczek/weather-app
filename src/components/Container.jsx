@@ -13,7 +13,7 @@ const Container = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="relative flex h-full w-full flex-col items-center p-8 sm:h-auto md:w-2/5 md:min-w-175 md:rounded-3xl md:border-2 md:border-primaryDark md:shadow-xl md:dark:border-primaryLight">
+    <div className="relative flex h-full w-full flex-col items-center p-4 sm:h-auto md:w-2/5 md:min-w-175 md:rounded-3xl md:border-2 md:border-primaryDark md:shadow-xl md:dark:border-primaryLight">
       <Header
         setCity={setCity}
         language={language}
