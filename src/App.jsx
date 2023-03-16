@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <div className="relative flex h-dvh w-full flex-col items-center justify-center bg-light text-dark dark:bg-dark dark:text-light sm:h-screen">
+    <div className="relative flex h-vh w-full flex-col items-center justify-center bg-light text-dark dark:bg-dark dark:text-light sm:h-screen">
       {data.name !== undefined && (
         <Container
           data={data}
