@@ -18,7 +18,7 @@ module.exports = {
         175: "700px",
       },
       height: {
-        dvh: "100dvh",
+        vh: "100vh",
       },
       animation: {
         "slide-in-left": "slide-in-left 0.3s",
