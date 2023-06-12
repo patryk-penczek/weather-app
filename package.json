@@ -1,12 +1,12 @@
 {
-  "name": "weather-react",
+  "name": "weather-app",
   "author": "Patryk Penczek",
   "private": true,
   "license": "ISC",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/patryk-penczek/Weather-App-React"
+    "url": "https://github.com/patryk-penczek/weather-app"
   },
   "type": "module",
   "scripts": {

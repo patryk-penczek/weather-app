@@ -12,7 +12,7 @@ A weather app that provides you with accurate and up-to-date weather information
 
 You can either run the project locally on your machine or simply visit the live version of the app:
 
-https://patryk-weather.netlify.app.
+https://weather.patrykpenczek.pl
 
 ### Local Installation (Optional)
 
@@ -25,8 +25,8 @@ If you want to run the project locally on your machine, you will need:
 
 To install the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/patryk-penczek/Weather-App-React.git`
-2. Navigate to the project directory: `cd weather-react`
+1. Clone the repository: `git clone https://github.com/patryk-penczek/weather-app.git`
+2. Navigate to the project directory: `cd weather-app`
 3. Install the dependencies: `yarn install` or `npm install`
 4. Start the development server: `yarn start` or `npm start`
 5. Open your browser and visit `http://localhost:3000` to view the app
